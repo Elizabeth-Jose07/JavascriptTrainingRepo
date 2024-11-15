@@ -3,7 +3,12 @@ function geometryMeasures(){
     let breadth =5;
     let area = length * breadth;
     let perimeter = (length *2) + (breadth *2);
-    return area, perimeter;
+    return {
+        area: area,
+        perimeter: perimeter
+    };
 }
 
-console.log('Area of the rectangle is '+ geometryMeasures() +' and perimeter of rectangle is '+ geometryMeasures());
+let result = geometryMeasures();
+
+console.log('Area of the rectangle is '+result.area +' and perimeter of rectangle is '+ result.perimeter);
