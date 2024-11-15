@@ -7,11 +7,13 @@ function cryptoCurrency() {
   let ethereumAmount = 5;
   let dogeCoinAmount = 10000;
 
-  let bitCoinTotal = bitCoinAmount * bitCoinRate;
-  let ethereumTotal = ethereumAmount * ethereumRate;
-  let dogeCoinTotal = dogeCoinAmount * dogeCoinRate;
+//   let bitCoinTotal = bitCoinAmount * bitCoinRate;
+//   let ethereumTotal = ethereumAmount * ethereumRate;
+//   let dogeCoinTotal = dogeCoinAmount * dogeCoinRate;
 
-  let totalInUSD = bitCoinTotal + ethereumTotal + dogeCoinTotal;
+//   let totalInUSD = bitCoinTotal + ethereumTotal + dogeCoinTotal;
+
+  let totalInUSD = (bitCoinAmount * bitCoinRate) + (ethereumAmount * ethereumRate) + (dogeCoinAmount * dogeCoinRate);
 
   return totalInUSD;
 
