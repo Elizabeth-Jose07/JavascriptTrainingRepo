@@ -6,4 +6,4 @@ function accessManagement() {
   let hasAccess = loggedIn && (isAdmin || isOwner);
   return hasAccess;
 }
-console.log(hasAccess);
+console.log(accessManagement());
