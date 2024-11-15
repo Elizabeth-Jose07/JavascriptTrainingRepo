@@ -3,9 +3,9 @@ function allergyInformation(){
     let vegan = true;
     let nonAllergen = 0;
 
-    let isGlutenFreeAndVegan = glutenFree && vegan;
-    let isGlutenFreeOrVegan = glutenFree || vegan;
-    let isNonAllergen = nonAllergen && 0;
+    let isGlutenFreeAndVegan = Boolean(glutenFree) && vegan;
+    let isGlutenFreeOrVegan = Boolean(glutenFree) || vegan;
+    let isNonAllergen = Boolean(nonAllergen);
 
     return { 
         isGlutenFreeAndVegan:isGlutenFreeAndVegan,
