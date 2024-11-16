@@ -3,8 +3,8 @@ function weatherRecommender(){
     let isRaining = false;
     let isCold = false;
 
-    let isOutDoorFriendly = isSunny && !(isCold || isRaining);
-    return isOutDoorFriendly;
+    let isOutdoorFriendly = isSunny && !(isCold && isRaining);
+    return isOutdoorFriendly;
 }
 
 console.log(weatherRecommender());
